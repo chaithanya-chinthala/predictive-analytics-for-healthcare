@@ -4,4 +4,4 @@
             the available collection of symptoms (what they suffer with)and  after submitting the symptoms the 
             system will predict the disease from the training model 
             
-**Installation**:git clone 
+**Installation**:git clone https://github.com/chaithanay-chinthala/predictive-analytics-for-healthcare.git
