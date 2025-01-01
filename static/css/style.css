@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efe4e4;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    padding: 23px;
+    margin: 50px auto;
+    width: 320px;
+    border: 2px solid #040303;
+    border-radius: 5px;
+}
+
+/* Headings */
+h1 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Symptom List */
+.symptoms-list {
+    margin-bottom: 20px;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #58d65b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0cce12;
+}
+
+/* Prediction Result */
+.result {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Link for back navigation */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0066cc;
+}
+
+a:hover {
+    color: #660080;
+}

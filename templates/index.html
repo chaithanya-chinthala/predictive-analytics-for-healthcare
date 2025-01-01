@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        {% if prediction %}
+            <h1>Prediction Result</h1>
+            <p>The predicted disease is: <strong>{{ prediction }}</strong></p>
+            <a href="/">Go back to the form</a>
+        {% else %}
+            <h1>Disease Prediction Based on Symptoms</h1>
+            <form action="/predict" method="POST">
+                <h3>Select Your Symptoms:</h3>
+                <div class="symptoms-list">
+                    {% for symptom in symptoms %}
+                        <label>
+                            <input type="checkbox" name="symptoms" value="{{ symptom }}"> {{ symptom }}
+                        </label><br>
+                    {% endfor %}
+                </div>
+                <input type="submit" value="Predict Disease" class="submit-btn">
+            </form>
+        {% endif %}
+    </div>
+</body>
+</html>
